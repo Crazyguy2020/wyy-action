@@ -107,13 +107,11 @@ else:
     print("发生错误："+str(object['code'])+object['message'])
     exit(object['code'])
 
-###以下為自己修改的代碼
+
 def main():
     # 调用Server酱推送消息
-    #invite = wps_invite(sid)
-    #sign_in = wps_sign_in(userid)
-    content = object
     object=json.loads(res.text,strict=False)
+    content = object
     api = "https://sc.ftqq.com/SCU112474T7e8d411b48136b3f8ba49d7b63d10c475f55027323f84.send"
     title = "网易云音乐打卡通知"
     data = {
